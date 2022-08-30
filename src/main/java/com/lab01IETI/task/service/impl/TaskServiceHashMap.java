@@ -41,7 +41,7 @@ public class TaskServiceHashMap implements TaskService {
     public boolean deleteById(Long id) {
         if(tasks.containsKey(id)){
             tasks.remove(id);
-            return tasks.containsKey(id);
+            return true;
         }else{
         return false;
         }
